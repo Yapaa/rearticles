@@ -1,0 +1,61 @@
+Container(
+                width: 370,
+                // padding: EdgeInsets.all(15),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.all(Radius.circular(20)),
+                  color: Color.fromARGB(255, 247, 247, 247),
+                  boxShadow: [
+                    BoxShadow(
+                        color: Color.fromRGBO(0, 0, 0, 0.250),
+                        blurRadius: 5,
+                        offset: Offset(0, 4))
+                  ],
+                ),
+                child: Column(
+                  children: [
+                    SizedBox(height: 10),
+                    Container(
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.all(
+                            Radius.circular(16),
+                          ),
+                          color: Color.fromARGB(255, 99, 99, 99)),
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(horizontal: 10),
+                        child: Text("Announcement",
+                            style: TextStyle(
+                                color: Color.fromARGB(255, 252, 252, 252))),
+                      ),
+                    ),
+                    // SizedBox(height: 10),
+                    Padding(
+                      padding: const EdgeInsets.all(10),
+                      child: Row(
+                        children: [
+                          Image.network(
+                            'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYgvxaS317Xl0AHkE_Qd4VbPleZDxls6LFzA&usqp=CAU',
+                            height: 70,
+                            width: 90,
+                          ),
+                          SizedBox(width: 10),
+                          Text(
+                            "afaerviwnevwee\nafaerwevoiiwnevwe\nafaervivoiiwnevwe",
+                            style: TextStyle(
+                                color: const Color.fromARGB(255, 37, 37, 37),
+                                fontSize: 12),
+                          )
+                        ],
+                      ),
+                    ),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        Text('18 Agustus 2024:18.00',
+                            style: TextStyle(
+                                color: const Color.fromARGB(255, 10, 10, 10),
+                                fontSize: 12))
+                      ],
+                    )
+                  ],
+                ),
+              ),
